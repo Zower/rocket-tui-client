@@ -1,0 +1,16 @@
+[package]
+name = "rocket-tui-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tui = "0.18"
+crossterm = { version = "0.23.2", features = ["event-stream"]}
+
+serde = { version = "1.0.137", features = ["derive"] }
+reqwest = { version = "0.11.10", features = ["json"] }
+
+tokio = { version = "1", features = ["full"] }
+futures = "0.3.21"
